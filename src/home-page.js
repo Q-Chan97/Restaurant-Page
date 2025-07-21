@@ -67,4 +67,21 @@ export function loadHome() {
     timesDiv.appendChild(timesHead);
     timesDiv.appendChild(timesInfo);
     content.appendChild(timesDiv);
+
+    //////
+
+    const locDiv = document.createElement("div");
+    locDiv.classList.add("info-div");
+
+    const locHead = document.createElement("p");
+    locHead.classList.add("info-head");
+    locHead.textContent = "Come Visit Us:";
+
+    const locInfo = document.createElement("p");
+    locInfo.classList.add("info-text");
+    locInfo.textContent = "123 Gangle St, Big Top DC, 90210"
+
+    locDiv.appendChild(locHead);
+    locDiv.appendChild(locInfo);
+    content.appendChild(locDiv);
 }
