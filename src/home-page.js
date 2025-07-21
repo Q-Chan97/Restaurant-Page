@@ -1,3 +1,4 @@
+import "./styles/styles.css";
 import "./styles/home.css";
 
 import burgerImage from "./burger.jpg";
