@@ -68,7 +68,7 @@ button:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 }
 #main-description-box p:first-child {
     font-size: 2rem;
