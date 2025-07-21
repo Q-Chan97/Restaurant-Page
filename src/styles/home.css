@@ -50,19 +50,19 @@
     float:inline-end;
 }
 
-#times-div {
+.info-div {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
 }
 
-.times-head {
+.info-head {
     color: rgb(215, 0, 0);
     font-size: 1.3rem;
     font-weight: 600;
 }
 
-.times-info {
+.info-text {
     font-size: 1.1rem;
 }

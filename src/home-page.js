@@ -54,14 +54,14 @@ export function loadHome() {
     //////
 
     const timesDiv = document.createElement("div");
-    timesDiv.id = "times-div";
+    timesDiv.classList.add("info-div");
 
     const timesHead = document.createElement("p");
-    timesHead.classList.add("times-head");
+    timesHead.classList.add("info-head");
     timesHead.textContent = "Operating Hours:";
 
     const timesInfo = document.createElement("p");
-    timesInfo.classList.add("times-info");
+    timesInfo.classList.add("info-text");
     timesInfo.textContent = "Monday to Saturday: 10am thru 10pm";
 
     timesDiv.appendChild(timesHead);
