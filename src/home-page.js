@@ -22,6 +22,8 @@ export function loadHome() {
 
     content.appendChild(logoDiv);
 
+    //////
+
     const bodyDiv = document.createElement("div");
     bodyDiv.id = "body-div";
 
@@ -48,4 +50,21 @@ export function loadHome() {
     bodyCard.appendChild(burgImgHolder);
     bodyDiv.appendChild(bodyCard);
     content.appendChild(bodyDiv);
+
+    //////
+
+    const timesDiv = document.createElement("div");
+    timesDiv.id = "times-div";
+
+    const timesHead = document.createElement("p");
+    timesHead.classList.add("times-head");
+    timesHead.textContent = "Operating Hours:";
+
+    const timesInfo = document.createElement("p");
+    timesInfo.classList.add("times-info");
+    timesInfo.textContent = "Monday to Saturday: 10am thru 10pm";
+
+    timesDiv.appendChild(timesHead);
+    timesDiv.appendChild(timesInfo);
+    content.appendChild(timesDiv);
 }

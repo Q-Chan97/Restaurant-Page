@@ -18,7 +18,7 @@
 
 #body-div {
     display: flex;
-    height: 100vh;
+    margin-bottom: 50px;
 }
 
 .body-card {
@@ -48,4 +48,21 @@
     width: 700px;
     height: 100%;
     float:inline-end;
+}
+
+#times-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.times-head {
+    color: rgb(215, 0, 0);
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.times-info {
+    font-size: 1.1rem;
 }
