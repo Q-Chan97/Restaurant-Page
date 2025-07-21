@@ -1,0 +1,14 @@
+#main-menu-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(39, 121, 162);
+    border-radius: 15px;
+    width: 60%;
+}
+
+.menu-divider {
+    border: 1px solid rgb(39, 121, 162);
+    width: 50%;
+}
