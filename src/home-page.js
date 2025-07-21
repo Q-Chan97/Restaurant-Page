@@ -1,3 +1,5 @@
+import "./styles/home.css";
+
 import burgerImage from "./burger.jpg";
 import logoImg from "./Spudsy's_Logo.png";
 
