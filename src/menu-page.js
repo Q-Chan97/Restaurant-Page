@@ -11,6 +11,43 @@ export function loadMenu() {
 
     //////
 
+    function createCategory(categoryName) {
+        let category = document.createElement("div");
+        category.classList.add("category-class");
+        
+        let categoryTitle = document.createElement("div");
+        categoryTitle.classList.add("menu-category")
+        categoryTitle.textContent = categoryName;
+        category.appendChild(categoryTitle);
+
+
+        function createMenuCard (name, info, price) {
+            let card = document.createElement("div");
+            card.classList.add("menu-card");
+   
+           let menuName = document.createElement("div");
+           menuName.classList.add("name")
+           menuName.textContent = name
+           card.appendChild(menuName);
+   
+           let menuInfo = document.createElement("div");
+           menuInfo.classList.add("info")
+           menuInfo.textContent = info
+           card.appendChild(menuInfo);
+   
+           let menuPrice = document.createElement("div");
+           menuPrice.classList.add("info")
+           menuPrice.textContent = price
+           card.appendChild(menuPrice);
+           
+           category.appendChild(card);
+        }
+
+        return {category, createMenuCard}
+    } 
+
+    //////
+
     const header = document.createElement("h1");
     header.id = "menu-head";
     header.textContent = "Our Menu"
@@ -23,30 +60,25 @@ export function loadMenu() {
 
     //////
 
-    const entreeDiv = document.createElement("div");
-    entreeDiv.id = "entree-div";
+    const foodDiv = document.createElement("div");
+    foodDiv.id = "food-div"
+    mainDiv.appendChild(foodDiv);
 
-    const entreeHead = document.createElement("p");
-    entreeHead.classList.add("menu-category");
-    entreeHead.textContent = "Entrées";
-
-    entreeDiv.appendChild(entreeHead);
-
-    //////
-
-    const sideHead = document.createElement("p");
-    sideHead.classList.add("menu-category");
-    sideHead.textContent = "Sides";
-
-    entreeDiv.appendChild(sideHead);
+    const entree = createCategory("Entrées");
+    entree.createMenuCard("Spudsy Burger", "The classic. Beef, lettuce, tomato, bun.", "$5");
+    entree.createMenuCard("Crispy Nugs", "Deep-fried and butter-battered fresh chicken nuggies.", "$3");
+    
+    foodDiv.appendChild(entree.category);
 
     //////
 
-    const dessertHead = document.createElement("p");
-    dessertHead.classList.add("menu-category");
-    dessertHead.textContent = "Dessert";
 
-    entreeDiv.appendChild(dessertHead);
+  
 
-    mainDiv.appendChild(entreeDiv);
+    //////
+
+
+    
+
+    
 }
