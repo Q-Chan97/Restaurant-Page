@@ -76,8 +76,12 @@ export function loadMenu() {
 
     //////
 
+    const sides = createCategory("Sides");
+    sides.createMenuCard("Crinkle Fries", "Signature crinkle fries, from only potatoes", "$3");
+    sides.createMenuCard("Mashed Potatoes", "Potates- mashed till light and fluffy", "$3");
+    sides.createMenuCard("Side Salad", "Mixed greens with tomato and croutons", "$4");
 
-  
+    foodDiv.appendChild(sides.category);
 
     //////
 
