@@ -85,8 +85,10 @@ export function loadMenu() {
 
     //////
 
+    const sweets = createCategory("Sweet Treats");
+    sweets.createMenuCard("Shake", "Rich and creamy custard shake", "$4");
+    sweets.createMenuCard("Cookies", "Warm and tasty chocolate chip cookies", "$3");
+    sweets.createMenuCard("Apple Pie", "Baked to crispy perfection", "$2");
 
-    
-
-    
+    foodDiv.appendChild(sweets.category);
 }
