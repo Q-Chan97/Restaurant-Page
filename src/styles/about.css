@@ -1,0 +1,20 @@
+#about-head {
+    color: #036;
+    font-size: 50px;
+
+}
+
+#banner-div {
+    display: flex;
+    flex-direction: column;
+    max-width: 900px;
+}
+
+.banner-head {
+    color: #036;
+    font-size: 32px;
+}
+
+.about-body-text {
+    font-size: 1.125rem;
+}
