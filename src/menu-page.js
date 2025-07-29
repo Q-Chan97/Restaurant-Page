@@ -65,9 +65,9 @@ export function loadMenu() {
     mainDiv.appendChild(foodDiv);
 
     const entree = createCategory("Entrées");
-    entree.createMenuCard("Spudsy Burger", "The classic. Beef, lettuce, tomato, bun.", "$5");
+    entree.createMenuCard("#57 Value Meal", "The classic. Burger, fries, and a drink.", "$5");
     entree.createMenuCard("Spudsy With Cheese", "The OG, with melty American Cheese", "$5");
-    entree.createMenuCard("Bacon Spud Deluxe", "Fresh beef with thick cut bacon.", "$7");
+    entree.createMenuCard("Stupid Burger", "The burger that makes you stupid.", "$7");
     entree.createMenuCard("Spicy Chichen Sand", "Crispy chicken brings the heat", "$5");
     entree.createMenuCard("Crispy Nugs", "Deep-fried and butter-battered fresh chicken nuggies.", "$3");
     entree.createMenuCard("Jumbo Shrimp", "Breaded shrimp with cocktail sauce and lemon.", "$6");
