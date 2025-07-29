@@ -4,7 +4,7 @@
 
 }
 
-#banner-div {
+.page-div {
     display: flex;
     flex-direction: column;
     max-width: 900px;
@@ -17,4 +17,15 @@
 
 .about-body-text {
     font-size: 1.125rem;
+}
+
+#staff-div {
+    width: 100%;
+}
+
+.staff-container {
+    display: flex;
+    width: 150px;
+    height: 200px;
+    border: 1px solid red /* reference border */
 }
