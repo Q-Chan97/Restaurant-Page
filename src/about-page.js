@@ -5,6 +5,8 @@ import bannerImg from "./about-img/about-banner.jpeg";
 import jaxImg from "./about-img/about-jax.jpg";
 import pomniImg from "./about-img/about-pomni.jpg";
 import ragsImg from "./about-img/about-rags.jpg";
+import gangleImg from "./about-img/about-gangle.jpg";
+import zoobleImg from "./about-img/about-zooble.png";
 
 export function loadAbout() {
     const content = document.querySelector("#content");
@@ -17,7 +19,7 @@ export function loadAbout() {
     //////
 
     const bannerDiv = document.createElement("div");
-    bannerDiv.id = "banner-div";
+    bannerDiv.classList.add("page-div")
 
     const bannerImage = document.createElement("img");
     bannerImage.src = bannerImg;
@@ -48,4 +50,40 @@ export function loadAbout() {
     bannerTextDiv.appendChild(bannerText3);
 
     content.appendChild(bannerDiv);
+
+    //////
+
+    const teamDiv = document.createElement("div");
+    teamDiv.classList.add("page-div")
+    
+    const teamDivHead = document.createElement("h2");
+    teamDivHead.textContent = "MEET THE STAFF";
+    teamDivHead.classList.add("banner-head")
+    teamDiv.appendChild(teamDivHead);
+
+    //////
+
+    const staffDiv = document.createElement("div");
+    staffDiv.id = "staff-div";
+    teamDiv.appendChild(staffDiv);
+
+    const gangleDiv = document.createElement("div");
+    gangleDiv.classList.add("staff-container");
+
+    const ganglePic = document.createElement("img");
+    ganglePic.src = gangleImg;
+    ganglePic.classList.add("staff-img");
+    gangleDiv.appendChild(ganglePic);
+
+    const gangleName = document.createElement("p");
+    gangleName.classList.add("staff-name");
+    gangleName.textContent = "Gangle";
+    gangleDiv.appendChild(gangleName);
+
+    staffDiv.appendChild(gangleDiv);
+
+
+
+
+    content.appendChild(teamDiv);
 }
