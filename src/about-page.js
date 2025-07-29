@@ -68,6 +68,23 @@ export function loadAbout() {
     staffDiv.id = "staff-div";
     teamDiv.appendChild(staffDiv);
 
+    const caineDiv = document.createElement("div");
+    caineDiv.classList.add("staff-container");
+
+    const cainePic = document.createElement("img");
+    cainePic.src = caineImg;
+    cainePic.classList.add("staff-img");
+    caineDiv.appendChild(cainePic);
+
+    const caineName = document.createElement("p");
+    caineName.classList.add("staff-name");
+    caineName.textContent = "Caine";
+    caineDiv.appendChild(caineName);
+
+    staffDiv.appendChild(caineDiv);
+
+    //////
+
     const gangleDiv = document.createElement("div");
     gangleDiv.classList.add("staff-container");
 
@@ -134,7 +151,22 @@ export function loadAbout() {
 
     staffDiv.appendChild(jaxDiv);
 
+    //////
 
+    const zoobleDiv = document.createElement("div");
+    zoobleDiv.classList.add("staff-container");
+
+    const zooblePic = document.createElement("img");
+    zooblePic.src = zoobleImg;
+    zooblePic.classList.add("staff-img");
+    zoobleDiv.appendChild(zooblePic);
+
+    const zoobleName = document.createElement("p");
+    zoobleName.classList.add("staff-name");
+    zoobleName.textContent = "Zooble";
+    zoobleDiv.appendChild(zoobleName);
+
+    staffDiv.appendChild(zoobleDiv);
 
     content.appendChild(teamDiv);
 }
