@@ -18,6 +18,7 @@ export function loadHome() {
 
     const title = document.createElement("h1");
     title.textContent = "Welcome to Spudsy's!";
+    title.id = "home-title";
     logoDiv.appendChild(title);
 
     content.appendChild(logoDiv);
@@ -79,7 +80,7 @@ export function loadHome() {
 
     const locInfo = document.createElement("p");
     locInfo.classList.add("info-text");
-    locInfo.textContent = "123 Gangle St, Big Top DC, 90210"
+    locInfo.textContent = "123 Big Top St, Tent City TADC, 90210"
 
     locDiv.appendChild(locHead);
     locDiv.appendChild(locInfo);

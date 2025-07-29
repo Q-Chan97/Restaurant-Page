@@ -12,8 +12,13 @@
 }
 
 #logo-img {
-    width: 90px;
-    height: 90px;
+    width: 190px;
+    height: 190px;
+}
+
+#home-title {
+    color: #036;
+    font-size: 50px;
 }
 
 #body-div {
