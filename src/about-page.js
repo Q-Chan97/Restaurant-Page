@@ -82,6 +82,22 @@ export function loadAbout() {
 
     staffDiv.appendChild(gangleDiv);
 
+    //////
+
+    const ragathaDiv = document.createElement("div");
+    ragathaDiv.classList.add("staff-container");
+
+    const ragathaPic = document.createElement("img");
+    ragathaPic.src = ragsImg;
+    ragathaPic.classList.add("staff-img");
+    ragathaDiv.appendChild(ragathaPic);
+
+    const ragathaName = document.createElement("p");
+    ragathaName.classList.add("staff-name");
+    ragathaName.textContent = "Ragatha";
+    ragathaDiv.appendChild(ragathaName);
+
+    staffDiv.appendChild(ragathaDiv);
 
 
 
