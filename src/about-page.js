@@ -7,6 +7,7 @@ import pomniImg from "./about-img/about-pomni.jpg";
 import ragsImg from "./about-img/about-rags.jpg";
 import gangleImg from "./about-img/about-gangle.jpg";
 import zoobleImg from "./about-img/about-zooble.png";
+import caineImg from "./about-img/about-caine.png";
 
 export function loadAbout() {
     const content = document.querySelector("#content");
@@ -98,6 +99,40 @@ export function loadAbout() {
     ragathaDiv.appendChild(ragathaName);
 
     staffDiv.appendChild(ragathaDiv);
+
+    //////
+
+    const pomniDiv = document.createElement("div");
+    pomniDiv.classList.add("staff-container");
+
+    const pomniPic = document.createElement("img");
+    pomniPic.src = pomniImg;
+    pomniPic.classList.add("staff-img");
+    pomniDiv.appendChild(pomniPic);
+
+    const pomniName = document.createElement("p");
+    pomniName.classList.add("staff-name");
+    pomniName.textContent = "Pomni";
+    pomniDiv.appendChild(pomniName);
+
+    staffDiv.appendChild(pomniDiv);
+
+    //////
+
+    const jaxDiv = document.createElement("div");
+    jaxDiv.classList.add("staff-container");
+
+    const jaxPic = document.createElement("img");
+    jaxPic.src = jaxImg;
+    jaxPic.classList.add("staff-img");
+    jaxDiv.appendChild(jaxPic);
+
+    const jaxName = document.createElement("p");
+    jaxName.classList.add("staff-name");
+    jaxName.textContent = "Jax";
+    jaxDiv.appendChild(jaxName);
+
+    staffDiv.appendChild(jaxDiv);
 
 
 
